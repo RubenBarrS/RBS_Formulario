@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		th {
+			color: red;
+			background: #FAF761;	
+		}
+		td{
+			background: #0ED5E0;
+		}
+	</style>
+
+</head>
+<body>
+	<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+		<table border="2">
+			<tr><th colspan="2">User Form</th></tr>
+
+			<tr><td><label for="name">Enter name</label> </td>
+				<td><input type="text" name = "nombre" id="name">
+			</td></tr>
+
+			<tr><td><label for="password">Enter Password</label> </td>
+				<td><input type="password" name = "password" id="password">
+			</td></tr>
+
+			<tr><td><label for="direccion">Enter Adress</label> </td>
+				<td><textarea name ="direccion" id="direccion" rows="5" cols="26"></textarea> 
+			</td></tr>
+
+			<tr><td>Select Game</td>
+				<td><input type="checkbox" id="Hockey" name="deportes[]" value="Hockey"> <label for = "Hockey">Hockey</label></br>
+				<input type="checkbox" id="Football" name="deportes[]" value="Football"> <label for = "Football">Football</label></br>
+				<input type="checkbox" id="Badminton" name="deportes[]" value="Badminton"> <label for = "Badminton">Badminton</label></br>
+				<input type="checkbox" id="Cricket" name="deportes[]" value="Cricket"> <label for = "Cricket">Cricket</label></br>
+				<input type="checkbox" id="volleyball" name="deportes[]" value="volleyball"> <label for = "volleyball">volleyball</label>
+				</td>
+			</tr>
+			<tr><td>Gender</td>
+				<td><input type="radio" name="sexo" id="male" value="male"><label for="male">male</label>
+				<input type="radio" name="sexo" id="female" value="female"><label for="female">female</label>
+			</td></tr>
+
+			<tr><td>Select ur age</td><td><select name="edad">
+				<option value = "18">18</option>
+				<option value = "19">19</option>
+				<option value = "+19">+19</option>
+			</select> </td>
+			</tr>
+
+			<tr><td colspan="2" align="center"><input type="file" name="examinar"></td></tr>
+
+			<tr><td colspan="2" align="center"><input type="button" name="click" value="Click Me">
+				<input type="reset" name="reset" value="Restablecer">
+				<input type="submit" name="submit" value="Submit Form">
+			</td></tr>
+
+
+		</table>
+	</form>
+	
+
+</body>
+</html>
